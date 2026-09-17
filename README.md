@@ -14,6 +14,10 @@
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Codex、OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="两张 2.35:1 公众号文章封面：一张为远程办公文章绘制的扁平插画，图中直接生成标题「三个习惯，让远程办公不再焦虑」；另一张是砂锅粥美食摄影，不含文字，右侧留出干净的标题安全区。由 Beatra AI 生成。"></p>
+
+*两张 2.35:1 公众号文章封面：一张为远程办公文章绘制的扁平插画，图中直接生成标题「三个习惯，让远程办公不再焦虑」；另一张是砂锅粥美食摄影，不含文字，右侧留出干净的标题安全区。由 Beatra AI 生成。*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
 | [`wechat-cover-maker`](skills/wechat-cover-maker) | [SKILL.md](skills/wechat-cover-maker/SKILL.md) | 0.2.2 |
@@ -40,6 +44,18 @@ gh skill install beatra-ai/wechat-article-cover-skill wechat-cover-maker
 
 ```text
 从 https://github.com/beatra-ai/wechat-article-cover-skill 安装 wechat-cover-maker skill（目录 skills/wechat-cover-maker），然后按它的 SKILL.md 连接我的 Beatra 账号。
+```
+
+## 效果示例
+
+<p align="center"><img src="assets/demo-2.webp" width="800" alt="同两篇文章配套的 1:1 分享缩略图：远程办公标题分两行排在书桌插画上方，砂锅粥则以近景特写呈现，小尺寸下依然清晰。由 Beatra AI 生成。"></p>
+
+*同两篇文章配套的 1:1 分享缩略图：远程办公标题分两行排在书桌插画上方，砂锅粥则以近景特写呈现，小尺寸下依然清晰。由 Beatra AI 生成。*
+
+提示词：
+
+```text
+[1] 微信公众号文章分享缩略图，正方形 1:1 构图，科技与效率主题的扁平插画风格，与同一篇文章的横版封面保持一致。画面下半部分：一张整洁的家中书桌，一台打开的笔记本电脑、一杯冒热气的茶、一盆小绿植，清晨柔和的暖色阳光。画面上半部分是干净的浅米白色背景留白，在其中居中用粗体黑体、深藏青色（#1F2A44）横排写出标题，分两行，文字必须逐字准确：第一行“三个习惯，”，第二行“让远程办公不再焦虑”。标题字大、醒目，四周留足边距，远离画面边缘。配色：米白、深藏青、柔和的珊瑚橙点缀。在很小的尺寸下依然清晰可辨。除这两行标题外，画面中不要出现任何其他文字、字母、数字、标志或水印；电脑屏幕上不显示文字。 ||| [2] Square 1:1 share thumbnail for a WeChat Official Account lifestyle article about cooking a warming autumn clay-pot congee at home, matching the article's wide editorial food photography cover. One focal subject, large and centered slightly low: a dark glazed clay pot of steaming creamy rice congee with shredded ginger, sliced scallions and a few goji berries, a ceramic spoon resting on the rim, gentle steam rising, on a warm oak table with a folded oatmeal linen napkin and two small dried red dates beside it. Soft natural window light from the left, shallow depth of field, warm amber, cream and muted terracotta palette. Clear bold silhouette that stays recognizable at very small thumbnail size; the upper quarter is a calm out-of-focus warm cream wall. Keep the pot fully inside the frame with margin from all edges. No text, no letters, no typography, no logos, no watermark.
 ```
 
 ## 你能得到什么

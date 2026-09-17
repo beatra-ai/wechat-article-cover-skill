@@ -14,6 +14,10 @@ Turn an article title, topic, or reference image into a WeChat Official Account 
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="Two 2.35:1 WeChat Official Account article covers: a flat illustration for a remote-work article with the headline &quot;三个习惯，让远程办公不再焦虑&quot; rendered in the image, and a no-text clay-pot congee food photo with a quiet headline-safe area on the right. AI-generated with Beatra."></p>
+
+*Two 2.35:1 WeChat Official Account article covers: a flat illustration for a remote-work article with the headline "三个习惯，让远程办公不再焦虑" rendered in the image, and a no-text clay-pot congee food photo with a quiet headline-safe area on the right. AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
 | [`wechat-cover-maker`](skills/wechat-cover-maker) | [SKILL.md](skills/wechat-cover-maker/SKILL.md) | 0.2.2 |
@@ -41,6 +45,18 @@ Or paste this into your agent:
 
 ```text
 Install the wechat-cover-maker skill from https://github.com/beatra-ai/wechat-article-cover-skill (folder skills/wechat-cover-maker), then follow its SKILL.md to connect my Beatra account.
+```
+
+## Examples
+
+<p align="center"><img src="assets/demo-2.webp" width="800" alt="Matching 1:1 share thumbnails for the same two articles: the remote-work headline set on two lines above the desk illustration, and a close-up of the clay-pot congee that stays readable at small size. AI-generated with Beatra."></p>
+
+*Matching 1:1 share thumbnails for the same two articles: the remote-work headline set on two lines above the desk illustration, and a close-up of the clay-pot congee that stays readable at small size. AI-generated with Beatra.*
+
+Prompt:
+
+```text
+[1] 微信公众号文章分享缩略图，正方形 1:1 构图，科技与效率主题的扁平插画风格，与同一篇文章的横版封面保持一致。画面下半部分：一张整洁的家中书桌，一台打开的笔记本电脑、一杯冒热气的茶、一盆小绿植，清晨柔和的暖色阳光。画面上半部分是干净的浅米白色背景留白，在其中居中用粗体黑体、深藏青色（#1F2A44）横排写出标题，分两行，文字必须逐字准确：第一行“三个习惯，”，第二行“让远程办公不再焦虑”。标题字大、醒目，四周留足边距，远离画面边缘。配色：米白、深藏青、柔和的珊瑚橙点缀。在很小的尺寸下依然清晰可辨。除这两行标题外，画面中不要出现任何其他文字、字母、数字、标志或水印；电脑屏幕上不显示文字。 ||| [2] Square 1:1 share thumbnail for a WeChat Official Account lifestyle article about cooking a warming autumn clay-pot congee at home, matching the article's wide editorial food photography cover. One focal subject, large and centered slightly low: a dark glazed clay pot of steaming creamy rice congee with shredded ginger, sliced scallions and a few goji berries, a ceramic spoon resting on the rim, gentle steam rising, on a warm oak table with a folded oatmeal linen napkin and two small dried red dates beside it. Soft natural window light from the left, shallow depth of field, warm amber, cream and muted terracotta palette. Clear bold silhouette that stays recognizable at very small thumbnail size; the upper quarter is a calm out-of-focus warm cream wall. Keep the pot fully inside the frame with margin from all edges. No text, no letters, no typography, no logos, no watermark.
 ```
 
 ## What you get
