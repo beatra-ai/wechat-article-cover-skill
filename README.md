@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`wechat-cover-maker`](skills/wechat-cover-maker) | [SKILL.md](skills/wechat-cover-maker/SKILL.md) | 0.2.5 |
+| [`wechat-cover-maker`](skills/wechat-cover-maker) | [SKILL.md](skills/wechat-cover-maker/SKILL.md) | 0.2.8 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/wechat-cover-maker) 自动发布，问题请到那里反馈。
 
@@ -89,10 +89,11 @@ gh skill install beatra-ai/wechat-article-cover-skill wechat-cover-maker
 
 通过提炼文章核心钩子、强化缩略图识别度、建立清晰视觉层级，并让标题、人物、商品与品牌元素更贴合发布场景。
 
-## 更新
+## 更新与安全
 
-安装后的 skill 每天最多检查一次新版本，替换前先校验官方归档，任何一步失败都不会动你已安装的版本。
-随时可以关闭，见 skill 内的 `references/automatic-updates-and-safety.md`。
+自 2026 年 10 月的版本起，本 skill 不再包含自更新程序：它只运行你安装的文件，从不自行替换。
+请用安装时的工具更新——`npx skills update wechat-cover-maker` 或 `gh skill update wechat-cover-maker`。
+详见 skill 内的 `references/updates-and-security.md`。
 
 ## 许可证
 

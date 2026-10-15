@@ -20,7 +20,7 @@ Turn an article title, topic, or reference image into a WeChat Official Account 
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`wechat-cover-maker`](skills/wechat-cover-maker) | [SKILL.md](skills/wechat-cover-maker/SKILL.md) | 0.2.5 |
+| [`wechat-cover-maker`](skills/wechat-cover-maker) | [SKILL.md](skills/wechat-cover-maker/SKILL.md) | 0.2.8 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/wechat-cover-maker). Report issues there.
 
@@ -90,12 +90,12 @@ Yes. Up to four visual references can guide the composition, style, subject, or 
 
 It uses safe margins, clear hierarchy, thumbnail review, and placement-aware cropping, then checks typography, logo shape, faces, dimensions, and edge details before finalizing the cover.
 
-## Updates
+## Updates and security
 
-Each installed skill checks for a new version at most once a day, verifies the
-official archive before replacing itself, and leaves your installation untouched
-if anything fails. Turn it off at any time — see
-`references/automatic-updates-and-safety.md` inside the skill.
+Since the 2026-10 release, this skill contains no self-updater: it runs only the
+files you installed and never replaces them on its own. Update it with the tool
+you installed it with — `npx skills update wechat-cover-maker` or `gh skill update wechat-cover-maker`.
+Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
