@@ -1,6 +1,8 @@
 # 公众号封面生成 Skill
 
-[简体中文](./README.md) | English
+[简体中文](./README.md) | English | [日本語](./README.ja.md)
+
+> 👉 See also [小红书封面制作 Skill](https://github.com/beatra-ai/xiaohongshu-cover-maker-skill)
 
 Turn an article title, topic, or reference image into a WeChat Official Account cover, article hero image, or supporting visual, with space kept for the headline and focused refinement, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
@@ -54,6 +56,12 @@ Install the wechat-cover-maker skill from https://github.com/beatra-ai/wechat-ar
 <p align="center"><img src="assets/demo-2.webp" width="800" alt="Matching 1:1 share thumbnails for the same two articles: the remote-work headline set on two lines above the desk illustration, and a close-up of the clay-pot congee that stays readable at small size. AI-generated with Beatra."></p>
 
 *Matching 1:1 share thumbnails for the same two articles: the remote-work headline set on two lines above the desk illustration, and a close-up of the clay-pot congee that stays readable at small size. AI-generated with Beatra.*
+
+Ask your agent:
+
+```text
+Make the matching 1:1 share thumbnails for these two articles: the remote-work one with the headline "三个习惯，让远程办公不再焦虑" set on two lines above the desk illustration, and the congee one as a close-up that stays readable at small size.
+```
 
 Prompt:
 

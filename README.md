@@ -1,6 +1,8 @@
 # 公众号封面生成 Skill
 
-简体中文 | [English](./README.en.md)
+简体中文 | [English](./README.en.md) | [日本語](./README.ja.md)
+
+> 👉 也看看 [小红书封面制作 Skill](https://github.com/beatra-ai/xiaohongshu-cover-maker-skill)
 
 输入文章标题、主题或参考图，生成公众号封面、推文首图和主题配图，支持标题入图、预留标题位置、品牌风格与构图精修，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
@@ -52,6 +54,12 @@ gh skill install beatra-ai/wechat-article-cover-skill wechat-cover-maker
 <p align="center"><img src="assets/demo-2.webp" width="800" alt="同两篇文章配套的 1:1 分享缩略图：远程办公标题分两行排在书桌插画上方，砂锅粥则以近景特写呈现，小尺寸下依然清晰。由 Beatra AI 生成。"></p>
 
 *同两篇文章配套的 1:1 分享缩略图：远程办公标题分两行排在书桌插画上方，砂锅粥则以近景特写呈现，小尺寸下依然清晰。由 Beatra AI 生成。*
+
+在你的 Agent 里这样说：
+
+```text
+给这两篇文章做配套的 1:1 分享缩略图：远程办公那篇，把标题“三个习惯，让远程办公不再焦虑”分两行放在书桌插画上方；砂锅粥那篇用近景特写，缩小后也要看得清。
+```
 
 提示词：
 
