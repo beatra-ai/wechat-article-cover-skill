@@ -1,0 +1,20 @@
+{
+  "name": "wechat-article-cover-skill",
+  "interface": {
+    "displayName": "公众号封面生成"
+  },
+  "plugins": [
+    {
+      "name": "wechat-cover-maker",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

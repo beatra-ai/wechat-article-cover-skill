@@ -35,6 +35,33 @@
 npx skills add beatra-ai/wechat-article-cover-skill
 ```
 
+Claude Code プラグインとして：
+
+```bash
+claude plugin marketplace add beatra-ai/wechat-article-cover-skill
+claude plugin install wechat-cover-maker@wechat-article-cover-skill
+```
+
+Codex プラグインとして：
+
+```bash
+codex plugin marketplace add beatra-ai/wechat-article-cover-skill
+codex plugin add wechat-cover-maker@wechat-article-cover-skill
+```
+
+GitHub Copilot CLI プラグインとして：
+
+```bash
+copilot plugin marketplace add beatra-ai/wechat-article-cover-skill
+copilot plugin install wechat-cover-maker@wechat-article-cover-skill
+```
+
+Gemini CLI 拡張機能として：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/wechat-article-cover-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash

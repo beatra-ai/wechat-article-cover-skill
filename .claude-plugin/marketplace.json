@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "wechat-article-cover-skill",
+  "description": "Beatra 公众号封面生成 Skill 的 Claude Code 插件。",
+  "owner": {
+    "name": "Beatra AI",
+    "url": "https://github.com/beatra-ai"
+  },
+  "plugins": [
+    {
+      "name": "wechat-cover-maker",
+      "source": "./",
+      "description": "Turn an article title, topic, or reference image into a WeChat Official Account cover, article hero image, post cover, or supporting article visual with headline-safe space and focused refinement."
+    }
+  ]
+}
