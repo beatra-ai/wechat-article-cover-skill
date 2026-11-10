@@ -10,6 +10,20 @@
   "homepage": "https://beatra.ai/skills/wechat-cover-maker",
   "repository": "https://github.com/beatra-ai/wechat-article-cover-skill",
   "license": "MIT-0",
+  "keywords": [
+    "WeChat Official Account cover",
+    "WeChat article cover",
+    "WeChat article cover maker",
+    "WeChat article hero image",
+    "WeChat post cover",
+    "WeChat headline image",
+    "article cover maker",
+    "article hero image",
+    "AI cover generator",
+    "brand cover image",
+    "headline-safe area",
+    "WeChat cover design"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -19,6 +33,13 @@
         "developerName": "Beatra AI",
         "category": "Creativity",
         "websiteURL": "https://beatra.ai/skills/wechat-cover-maker",
+        "supportURL": "https://github.com/beatra-ai/.github/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://beatra.ai/privacy",
+        "termsOfServiceURL": "https://beatra.ai/terms",
+        "defaultPrompt": [
+          "用「公众号爆款封面生成器」给我那篇讲小店怎么做会员复购的文章做一张封面，只要一个主视觉，短标题直接入图。"
+        ],
+        "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"
       }
     }

@@ -9,5 +9,19 @@
   "homepage": "https://beatra.ai/skills/wechat-cover-maker",
   "repository": "https://github.com/beatra-ai/wechat-article-cover-skill",
   "license": "MIT-0",
+  "keywords": [
+    "WeChat Official Account cover",
+    "WeChat article cover",
+    "WeChat article cover maker",
+    "WeChat article hero image",
+    "WeChat post cover",
+    "WeChat headline image",
+    "article cover maker",
+    "article hero image",
+    "AI cover generator",
+    "brand cover image",
+    "headline-safe area",
+    "WeChat cover design"
+  ],
   "logo": "assets/icon.png"
 }

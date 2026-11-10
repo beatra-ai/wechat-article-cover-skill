@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/wechat-article-cover-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/wechat-article-cover-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -95,6 +101,14 @@ Prompt:
 ```text
 [1] 微信公众号文章分享缩略图，正方形 1:1 构图，科技与效率主题的扁平插画风格，与同一篇文章的横版封面保持一致。画面下半部分：一张整洁的家中书桌，一台打开的笔记本电脑、一杯冒热气的茶、一盆小绿植，清晨柔和的暖色阳光。画面上半部分是干净的浅米白色背景留白，在其中居中用粗体黑体、深藏青色（#1F2A44）横排写出标题，分两行，文字必须逐字准确：第一行“三个习惯，”，第二行“让远程办公不再焦虑”。标题字大、醒目，四周留足边距，远离画面边缘。配色：米白、深藏青、柔和的珊瑚橙点缀。在很小的尺寸下依然清晰可辨。除这两行标题外，画面中不要出现任何其他文字、字母、数字、标志或水印；电脑屏幕上不显示文字。 ||| [2] Square 1:1 share thumbnail for a WeChat Official Account lifestyle article about cooking a warming autumn clay-pot congee at home, matching the article's wide editorial food photography cover. One focal subject, large and centered slightly low: a dark glazed clay pot of steaming creamy rice congee with shredded ginger, sliced scallions and a few goji berries, a ceramic spoon resting on the rim, gentle steam rising, on a warm oak table with a folded oatmeal linen napkin and two small dried red dates beside it. Soft natural window light from the left, shallow depth of field, warm amber, cream and muted terracotta palette. Clear bold silhouette that stays recognizable at very small thumbnail size; the upper quarter is a calm out-of-focus warm cream wall. Keep the pot fully inside the frame with margin from all edges. No text, no letters, no typography, no logos, no watermark.
 ```
+
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Text — The article title, topic, or summary | — | — |
+| **Input** | Image — Logo, portrait, product image, brand reference, or a draft to refine (optional) | JPG, PNG | up to 4 images per request |
+| **Output** | Image — One 900 × 383 WeChat article cover, with a rendered short title or a clear headline area | PNG, JPG, WEBP | 1 image per request |
 
 ## Technical Specifications & Output Limits
 
@@ -146,9 +160,9 @@ Yes. A short title can be included with a planned placement and contrast, or the
 
 Yes. Up to four visual references can guide the composition, style, subject, or brand direction, with the most important details stated clearly.
 
-### How does the cover keep headlines, logos, faces, and crops clear across placements?
+### How does the cover read at thumbnail size?
 
-It uses safe margins, clear hierarchy, thumbnail review, and placement-aware cropping, then checks typography, logo shape, faces, dimensions, and edge details before finalizing the cover.
+Safe margins, a clear hierarchy, and crops that suit each placement keep headlines, logos, faces, and edges readable at thumbnail size.
 
 ## Updates and security
 
@@ -159,9 +173,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=wechat-article-cover-skill).
 
 ## Links
 

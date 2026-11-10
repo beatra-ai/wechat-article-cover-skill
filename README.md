@@ -62,6 +62,12 @@ copilot plugin install wechat-cover-maker@wechat-article-cover-skill
 gemini extensions install https://github.com/beatra-ai/wechat-article-cover-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/wechat-article-cover-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -93,6 +99,14 @@ gh skill install beatra-ai/wechat-article-cover-skill wechat-cover-maker
 ```text
 [1] 微信公众号文章分享缩略图，正方形 1:1 构图，科技与效率主题的扁平插画风格，与同一篇文章的横版封面保持一致。画面下半部分：一张整洁的家中书桌，一台打开的笔记本电脑、一杯冒热气的茶、一盆小绿植，清晨柔和的暖色阳光。画面上半部分是干净的浅米白色背景留白，在其中居中用粗体黑体、深藏青色（#1F2A44）横排写出标题，分两行，文字必须逐字准确：第一行“三个习惯，”，第二行“让远程办公不再焦虑”。标题字大、醒目，四周留足边距，远离画面边缘。配色：米白、深藏青、柔和的珊瑚橙点缀。在很小的尺寸下依然清晰可辨。除这两行标题外，画面中不要出现任何其他文字、字母、数字、标志或水印；电脑屏幕上不显示文字。 ||| [2] Square 1:1 share thumbnail for a WeChat Official Account lifestyle article about cooking a warming autumn clay-pot congee at home, matching the article's wide editorial food photography cover. One focal subject, large and centered slightly low: a dark glazed clay pot of steaming creamy rice congee with shredded ginger, sliced scallions and a few goji berries, a ceramic spoon resting on the rim, gentle steam rising, on a warm oak table with a folded oatmeal linen napkin and two small dried red dates beside it. Soft natural window light from the left, shallow depth of field, warm amber, cream and muted terracotta palette. Clear bold silhouette that stays recognizable at very small thumbnail size; the upper quarter is a calm out-of-focus warm cream wall. Keep the pot fully inside the frame with margin from all edges. No text, no letters, no typography, no logos, no watermark.
 ```
+
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 文本：文章标题、主题或摘要 | — | — |
+| **输入** | 图片：Logo、人物照、商品图、品牌参考或要再改的草图（可选） | JPG、PNG | 单次最多 4 张 |
+| **输出** | 图片：一张适配 900 × 383 公众号封面位的文章封面，短标题入图或留出干净的标题区 | PNG、JPG、WEBP | 单次 1 张 |
 
 ## 技术规格与输出限制
 
@@ -138,15 +152,15 @@ gh skill install beatra-ai/wechat-article-cover-skill wechat-cover-maker
 
 ### 可以把文章标题直接放进封面吗？
 
-可以。短标题可以按明确位置和对比度直接入图；如果字体与排版必须精准，也可以先做无字背景，为后续排版保留标题安全区。
+可以。短标题可以按明确位置和对比度直接入图；如果字体与排版必须精准，也可以做无字背景，留出标题安全区，方便之后排版。
 
 ### 能使用已有 Logo、商品图、人物或品牌参考吗？
 
 可以。最多四张视觉参考可以分别用于主体、风格、人物或品牌方向，并会明确哪些细节需要尽量保留。
 
-### 公众号爆款封面如何提升点击吸引力？
+### 封面在缩略图里怎样看得清？
 
-通过提炼文章核心钩子、强化缩略图识别度、建立清晰视觉层级，并让标题、人物、商品与品牌元素更贴合发布场景。
+留好安全边距、层级清楚，并按发布位置裁切，让缩略图里的标题、Logo、人物和边缘元素都看得清。
 
 ## 更新与安全
 
@@ -156,7 +170,9 @@ gh skill install beatra-ai/wechat-article-cover-skill wechat-cover-maker
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=wechat-article-cover-skill)。
 
 ## 相关链接
 

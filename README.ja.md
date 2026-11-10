@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/wechat-article-cover-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/wechat-article-cover-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -93,6 +99,14 @@ https://github.com/beatra-ai/wechat-article-cover-skill から wechat-cover-make
 ```text
 [1] 微信公众号文章分享缩略图，正方形 1:1 构图，科技与效率主题的扁平插画风格，与同一篇文章的横版封面保持一致。画面下半部分：一张整洁的家中书桌，一台打开的笔记本电脑、一杯冒热气的茶、一盆小绿植，清晨柔和的暖色阳光。画面上半部分是干净的浅米白色背景留白，在其中居中用粗体黑体、深藏青色（#1F2A44）横排写出标题，分两行，文字必须逐字准确：第一行“三个习惯，”，第二行“让远程办公不再焦虑”。标题字大、醒目，四周留足边距，远离画面边缘。配色：米白、深藏青、柔和的珊瑚橙点缀。在很小的尺寸下依然清晰可辨。除这两行标题外，画面中不要出现任何其他文字、字母、数字、标志或水印；电脑屏幕上不显示文字。 ||| [2] Square 1:1 share thumbnail for a WeChat Official Account lifestyle article about cooking a warming autumn clay-pot congee at home, matching the article's wide editorial food photography cover. One focal subject, large and centered slightly low: a dark glazed clay pot of steaming creamy rice congee with shredded ginger, sliced scallions and a few goji berries, a ceramic spoon resting on the rim, gentle steam rising, on a warm oak table with a folded oatmeal linen napkin and two small dried red dates beside it. Soft natural window light from the left, shallow depth of field, warm amber, cream and muted terracotta palette. Clear bold silhouette that stays recognizable at very small thumbnail size; the upper quarter is a calm out-of-focus warm cream wall. Keep the pot fully inside the frame with margin from all edges. No text, no letters, no typography, no logos, no watermark.
 ```
+
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | テキスト：記事のタイトル、テーマ、要約 | — | — |
+| **入力** | 画像：ロゴ、人物写真、商品画像、ブランド資料、手直ししたい案（任意） | JPG、PNG | 1 リクエストあたり最大 4 枚 |
+| **出力** | 画像：900 × 383の WeChat 記事カバー1枚（短いタイトル入り、または見出し用の余白付き） | PNG、JPG、WEBP | 1 リクエストにつき 1 枚 |
 
 ## 技術仕様と出力上限
 
@@ -135,9 +149,9 @@ https://github.com/beatra-ai/wechat-article-cover-skill から wechat-cover-make
 
 はい。最大四つのビジュアル資料を、主役、スタイル、人物、ブランドの手がかりとして使い、残したい特徴を明確にできます。
 
-### 見出し、ロゴ、人物、トリミングを掲載先で見やすくするには？
+### サムネイルでの見やすさはどう作りますか？
 
-安全な余白、明確な階層、サムネイル確認、掲載位置に合わせたトリミングを使い、文字組み、ロゴ形状、人物、寸法、端の要素まで仕上げ前に確認します。
+安全な余白、ひと目で分かる情報の優先順位、掲載位置に合わせたトリミングで、サムネイルでも見出し、ロゴ、人物、端の要素がはっきり見えるようにします。
 
 ## 更新とセキュリティ
 
@@ -147,7 +161,9 @@ https://github.com/beatra-ai/wechat-article-cover-skill から wechat-cover-make
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=wechat-article-cover-skill)が適用されます。
 
 ## リンク
 
